@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DadaComponentLibrary</string>
+    <string name="base_take_photo">拍照</string>
+    <string name="base_select_photo">相册</string>
+    <string name="base_cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="base_no_sdcard">未发现SD卡</string>
+    <string name="base_need_permission">没有您的授权，不能进行此操作哦</string>
+    <string name="base_save_success">保存成功</string>
 </resources>

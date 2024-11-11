@@ -3,14 +3,13 @@ package com.dada.dadacomponentlibrary.activity
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.alibaba.android.arouter.launcher.ARouter
 import com.dada.dadacomponentlibrary.adapter.MainAdapter
-import com.dada.dadacomponentlibrary.adapter.base.BaseRecyclerViewAdapter
-import com.dada.dadacomponentlibrary.constant.Constants
 import com.dada.dadacomponentlibrary.databinding.ActivityMain2Binding
-import com.dada.dadacomponentlibrary.router.RouteUtils
 
 class MainActivity2 : ComponentActivity(){
+
+    private val TAG: String = MainActivity2::class.java.simpleName
+
     lateinit var binding: ActivityMain2Binding
     var datas: ArrayList<String> = ArrayList()
     lateinit var mainAdapter: MainAdapter
@@ -30,4 +29,5 @@ class MainActivity2 : ComponentActivity(){
         datas.add("LiveData发通知")
         mainAdapter.refreshDataList(datas)
     }
+
 }

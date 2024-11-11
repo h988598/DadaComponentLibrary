@@ -80,8 +80,13 @@ dependencies {
 
     implementation("com.alibaba:arouter-api:1.5.2")
     kapt("com.alibaba:arouter-compiler:1.5.2")
-//    implementation("androidx.core:core:1.13.0") {
-//        exclude(group = "com.android.support", module = "support-compat")
-//    }
+
+    implementation ("com.orhanobut:logger:2.2.0")
+    implementation ("io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.14")
+    implementation ("com.github.getActivity:XXPermissions:16.8")
+
+    implementation ("com.github.bumptech.glide:glide:4.9.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.9.0")
+
 
 }

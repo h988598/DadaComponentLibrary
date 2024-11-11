@@ -9,6 +9,7 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.dada.dadacomponentlibrary.activity.base.BaseHasFragmentActivity
 import com.dada.dadacomponentlibrary.constant.Constants
 import com.dada.dadacomponentlibrary.fragment.BottomDialogFragment
+import com.dada.dadacomponentlibrary.fragment.TakePhotoFragment
 import com.dada.dadacomponentlibrary.router.RouteUtils
 
 @Route(path = RouteUtils.FUNC_PATH)
@@ -21,6 +22,9 @@ class FuncActivity :BaseHasFragmentActivity() {
         return when (pageCode) {
             Constants.PAGE_CODE_BOTTOM_DIALOG -> {
                 BottomDialogFragment()
+            }
+            Constants.PAGE_CODE_TAKE_PHOTO -> {
+                TakePhotoFragment()
             }
 
             else -> {

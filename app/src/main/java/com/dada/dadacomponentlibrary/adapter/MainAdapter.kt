@@ -44,8 +44,13 @@ class MainAdapter(context: Context?) :
                         )
                         .navigation()
                 }
-                "LiveData发生通知" -> {
-
+                "拍照、选择图片" -> {
+                    ARouter.getInstance().build(RouteUtils.FUNC_PATH)
+                        .withString(
+                            Constants.PAGE_CODE,
+                            Constants.PAGE_CODE_TAKE_PHOTO
+                        )
+                        .navigation()
                 }
 
                 else -> {}
